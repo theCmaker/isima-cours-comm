@@ -13,7 +13,7 @@
 \newcommand{\xmark}{{\color{Red}\ding{55} }}%
 \usepackage{lipsum} %génération de lipsum
 
-\graphicspath{ {./slide_img/} }
+\graphicspath{{./slide_img/}}%
 
 \usetheme{Madrid}
 \setbeamertemplate{navigation symbols}{}
@@ -25,11 +25,11 @@
 \date{10 avril 2015}
 
 
-\AtBeginSection[]{
+\AtBeginSection[]{%
 	\begin{frame}
 		\frametitle{Sommaire}
 		\tableofcontents[currentsection, hideothersubsections]
-	\end{frame} 
+	\end{frame}
 }
 \begin{document}
 	\begin{frame}[plain] %title
@@ -41,6 +41,7 @@
 	\end{frame}
   \input{partie1}
   %\input{partie2}
-  %\input{partie3}
-  \input{partie4}
+  \input{partie3}
+  %\input{partie4}
+
 \end{document}
