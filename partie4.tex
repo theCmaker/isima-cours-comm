@@ -8,6 +8,7 @@
 			\item Téléphone: Temps de communication.
 		\end{itemize}
 	\end{block}
+	\pause
 	\begin{alertblock}{Economie}
 		\centering
 		\begin{tikzpicture}
@@ -17,6 +18,7 @@
 			\node at(3,.75) {Contraction};
 		\end{tikzpicture}
 	\end{alertblock}
+	\pause
 	\begin{exampleblock}{Exemples}
 		\begin{itemize}
 			\item Métro (\emph{Métropolitain}),
@@ -32,15 +34,18 @@
 	\begin{alertblock}{Risques}
 		\centering
 		\begin{tikzpicture}
-			\node (P) at (0,1.5) {Phrases longues et complexes};
+			\node (P) at (0,1.5) {Phrases longues et complexes}; \pause
 			\node (C) at (6,1.5) {Coût important};
+			\draw[->, thick] (P)--(C); \pause
 			\node (F) at (6,0) {Fatigue de l'interlocuteur};
+			\draw[->, thick] (C)--(F); \pause
 			\node (D) at (0,0) {Déconnexion};
+			\draw[->, thick] (F)--(D); \pause
 			\node[color=red] (R) at (3,-1.5) {Message non-reçu};
-			\draw[->, thick] (P)--(C) (C)--(F) (F)--(D) (D)--(R);
+			\draw[->, thick] (D)--(R); \pause
 		\end{tikzpicture}
 	\end{alertblock}
-	\begin{exampleblock}{Conséquence}
+	\begin{exampleblock}<6->{Conséquence}
 		\[ \text{Diminuer le nombre de signes} \implies \text{Message plus compréhensible} \]
 		$\implies$Exemple: Télégramme.
 	\end{exampleblock}
@@ -49,11 +54,12 @@
 	\frametitle{Efficacité}
 	\begin{alertblock}{Problèmes}
 		\begin{itemize}
-			\item Bruits et parasites (environnement par exemple),
+			\item Bruits parasites (environnement par exemple),
 			\item Pertes d'information (discours hâché au téléphone)...
 		\end{itemize}
 		Equilibre nécessaire entre coût et qualité de réception.
 	\end{alertblock}
+	\pause
 	\begin{block}{Finalement}
 		\begin{itemize}
 			\item Ni trop bref,
@@ -63,41 +69,21 @@
 \end{frame}
 \begin{frame}
 	\frametitle{Efficacité}
-	\begin{exampleblock}{Facteurs}
-		\begin{columns}
-			\begin{column}{.6\textwidth}
-				Fréquence d'utilisation des mots:
-				\vspace{-0.2cm}
-				\begin{columns}
-				\small
-				\begin{column}{0.45\textwidth}
-				\begin{itemize}
-					\item Noms: $20\%$,
-					\item Verbes: $17\%$,
-					\item Adjectifs: $7{,}5\%$,
-				\end{itemize}
-				\end{column}
-				\begin{column}{0.55\textwidth}
-				\begin{itemize}
-					\item Adverbes: $5{,}5\%$,
-					\item Mots "outils": $50\%$.
-				\end{itemize}
-				\end{column}
-				\end{columns}
-			\end{column}
-			\begin{column}{.4\textwidth}
-				\[ \text{Trop de noms} \implies \text{Difficile} \]
-			\end{column}
-		\end{columns}
+	\begin{exampleblock}{Origine}
+		Fréquence d'utilisation des mots
+		\[ \text{Trop de noms} \implies \text{Difficile} \]
 	\end{exampleblock}
+	\pause
 	\begin{block}{Rendre le discours compréhensible}
 		\emph{Degré d'intelligibilité} d'un message:
 		\begin{itemize}
 			\item Fréquence d'apparition,
 			\item Nature des mots.
-		\end{itemize}
-		Importance de la répartition des informations selon la \emph{fréquence d'apparition} des termes et leur \emph{prévisibilité}.\\
-		\bfseries \textcolor{red}{2 Exemples en opposition.}
+		\end{itemize} \pause
+		Importance de la répartition des informations selon la \emph{prévisibilité} des termes.
+
+		\vspace{0.2cm}
+		Exemple: {\itshape"Substantifique... ?"}
 	\end{block}
 \end{frame}
 \begin{frame}
@@ -109,11 +95,13 @@
 			\item Outil de contrôle pour le récepteur.
 		\end{itemize}
 	\end{block}
+	\pause
 	\begin{exampleblock}{Définition}
 		Excédent de signes pour une quantité d'information égale.
 	\end{exampleblock}
+	\pause
 	\begin{block}{Caractéristiques}
-		Nécessité:
+		Emploi:
 		\begin{itemize}
 			\item Faible dans la communication automatique (entre machines),
 			\item Indispensable dans la communication entre humains.
@@ -135,6 +123,7 @@
 
 		Conditionne l'efficacité.
 	\end{block}
+	\pause
 	\begin{exampleblock}{Redondance naturelle}
 		\begin{itemize}
 			\item Geste,
